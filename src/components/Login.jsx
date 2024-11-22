@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import logo from "../Images/ALpha Media.png";
-import banner from '../images/feature-banner.png'
+import banner from '../Images/feature-banner.png'
 
 const Login = ({setUsername}) => {
   const [user, setUser] = useState('');
