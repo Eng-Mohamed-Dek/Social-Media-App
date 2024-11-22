@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import banner from "../images/about-banner.png";
+import banner from "../Images/about-banner.png";
 
 const CreatePost = ({setPosts, posts, user}) => {
   const [title, setTitle] = useState("");
