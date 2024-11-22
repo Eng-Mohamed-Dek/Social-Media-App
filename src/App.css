@@ -1,0 +1,178 @@
+:root {
+    --primary: hsl(240, 100%, 48%);
+    --primary-active: hsl(240, 100%, 58%);
+    --primary-hover: hsl(240, 100%, 38%);
+    --secondary: #3d3d3d;
+    --bg: #3d3d3d06;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    font-size: 100%;
+    background-color: var(--bg);
+    width: 65%;
+    margin: 0 auto;
+}
+
+*, *::after , *::before {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100px;
+    display: block;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 120px;
+}
+
+form p {
+    font-size: 20px;
+}
+
+form input {
+    padding: 12px;
+    width: 340px;
+    height: 50px;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+form button {
+    padding: 12px;
+    width: 340px;
+    height: 50px;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    padding: 12px;
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+button:active {
+    background-color: var(--primary-active);
+}
+
+.banner {
+    width: 35%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: -11;
+}
+
+form p span {
+    color: var(--primary-hover);
+}
+
+.post {
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.post-area {
+    background-color: var(--bg);
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 50px;
+    display: block;
+}
+
+@media screen and (max-width: 1800px) {
+    .banner {
+        top: 30%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .banner {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    form input {
+        width: 320px;
+        height: 40px;
+        font-size: 16px;
+    }
+    form button {
+        padding: 12px;
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    
+    form p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    form input {
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+    }
+    form button {
+        padding: 12px;
+        width: 300px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    
+    form p {
+        font-size: 15px;
+    }
+}
